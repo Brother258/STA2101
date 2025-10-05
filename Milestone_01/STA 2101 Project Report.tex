@@ -1,0 +1,113 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}   % For figures and logo
+\usepackage{hyperref}   % For clickable links
+\usepackage{booktabs}   % For better tables
+\usepackage{amsmath}    % For equations
+\usepackage{setspace}   % Line spacing
+\usepackage{enumitem}   % Custom lists
+\usepackage{fancyhdr}   % For custom headers/footers
+\usepackage{xurl}       % For URL wrapping
+
+% -------------------------------
+% Header & Footer setup
+% -------------------------------
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+
+% ULAB logo on the right side of header
+\fancyhead[R]{\includegraphics[height=1.2cm]{CommonAssets/ULAB Logo.PNG}} 
+
+% Adjust header spacing
+\setlength{\headsep}{1.5cm}
+
+% Page number on the right footer
+\fancyfoot[R]{Page \thepage}
+
+% -------------------------------
+\title{\textbf{Course Project Report}\\STA 2101: Statistics \& Probability \\ [1em] 
+Project Title : Dhaka AQ
+}
+\author{Student Name : Md. Shahriar Alam \\
+Student ID : 242014180\\
+University of Liberal Arts Bangladesh (ULAB)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\onehalfspacing
+
+\begin{abstract} 
+This project analyzes the link between weather and air quality in Dhaka. It uses the "Dhaka Daily Air Quality and Weather" dataset. The study identifies key weather factors that impact the Air Quality Index (AQI). The analysis applies the statistical and probability concepts of STA 2101. 
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% -------------------------------
+\section{Milestone 1: Dataset Selection}
+\begin{itemize}
+    \item \textbf{Dataset Name :} Dhaka Daily Air Quality and Weather Dataset
+    \item \textbf{Dataset URL : } \url{https://www.kaggle.com/datasets/albab12/dhaka-daily-air-quality-and-weather-dataset}
+    \item \textbf{Description :} This project uses the "Dhaka Daily Air Quality \& Weather" dataset. The dataset provides daily records for Dhaka, Bangladesh. It contains two main types of information: air quality and weather. The air quality data includes the Air Quality Index (AQI). It also measures several pollutants. These pollutants include PM2.5, PM10, nitrogen dioxide, ozone, carbon monoxide, and sulfur dioxide. The weather data includes daily temperature. It also has information on humidity, barometric pressure, and wind speed. 
+
+    This dataset was chosen because it provides comprehensive variables for both air quality and weather. This makes it ideal for studying the relationship between these factors in Dhaka using Statistics \& Probability concept.
+\end{itemize}
+
+% -------------------------------
+\section{Milestone 2: Descriptive Statistics}
+Describe summary statistics of your dataset. Include tables, mean, median, mode, standard deviation, etc.
+
+Example of a table:
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{lrr}
+\toprule
+Variable & Mean & Standard Deviation \\
+\midrule
+Column A & 12.3 & 2.1 \\
+Column B & 45.7 & 5.6 \\
+\bottomrule
+\end{tabular}
+\caption{Sample descriptive statistics}
+\end{table}
+
+% -------------------------------
+\section{Milestone 3: Data Visualization}
+Add graphs and figures using LaTeX. Example:
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{example-figure.png}
+\caption{Sample dataset visualization (replace with your figure)}
+\end{figure}
+
+% -------------------------------
+\section{Milestone 4: Probability Distributions}
+Identify probability distributions in your dataset. Perform fitting, plots, and discuss results.
+
+% -------------------------------
+\section{Milestone 5: Hypothesis Testing}
+State hypotheses, perform tests, and report conclusions.
+
+% -------------------------------
+\section{Milestone 6: Regression Analysis}
+Fit regression models, explain coefficients, and evaluate model fit.
+
+% -------------------------------
+\section{Milestone 7--12: Further Analysis}
+Continue documenting each milestone here as instructed in class.
+
+% -------------------------------
+\section{Final Conclusion}
+Summarize the overall findings of your project. Mention challenges, learning outcomes, and possible future work.
+
+\newpage
+\section*{References}
+List your references here in proper citation format. If you prefer, you may use BibTeX.
+
+\end{document}
