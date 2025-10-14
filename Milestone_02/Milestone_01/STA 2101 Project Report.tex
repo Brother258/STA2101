@@ -1,0 +1,166 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}   % For figures and logo
+\usepackage{hyperref}   % For clickable links
+\usepackage{booktabs}   % For better tables
+\usepackage{amsmath}    % For equations
+\usepackage{setspace}   % Line spacing
+\usepackage{enumitem}   % Custom lists
+\usepackage{fancyhdr}   % For custom headers/footers
+\usepackage{xurl}       % For URL wrapping
+\usepackage{float}      % provides [H] placement
+\usepackage{placeins}   % provides \FloatBarrier
+
+% -------------------------------
+% Header & Footer setup
+% -------------------------------
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+
+% ULAB logo on the right side of header
+\fancyhead[R]{\includegraphics[height=1.2cm]{CommonAssets/ULAB Logo.PNG}} 
+
+% Adjust header spacing
+\setlength{\headsep}{1.5cm}
+
+% Page number on the right footer
+\fancyfoot[R]{Page \thepage}
+
+% -------------------------------
+\title{\textbf{Course Project Report}\\STA 2101: Statistics \& Probability \\ [1em] 
+Project Title : Dhaka AQ
+}
+\author{Student Name : Md. Shahriar Alam \\
+Student ID : 242014180\\
+University of Liberal Arts Bangladesh (ULAB)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\onehalfspacing
+
+\begin{abstract} 
+This project analyzes the link between weather and air quality in Dhaka. It uses the "Dhaka Daily Air Quality and Weather" dataset. The study identifies key weather factors that impact the Air Quality Index (AQI). The analysis applies the statistical and probability concepts of STA 2101. 
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+% -------------------------------
+\section{Milestone 1: Dataset Selection}
+\begin{itemize}
+    \item \textbf{Dataset Name :} Dhaka Daily Air Quality and Weather Dataset
+    \item \textbf{Dataset URL : } \url{https://www.kaggle.com/datasets/albab12/dhaka-daily-air-quality-and-weather-dataset}
+    \item \textbf{Description :} This project uses the "Dhaka Daily Air Quality \& Weather" dataset. The dataset provides daily records for Dhaka, Bangladesh. It contains two main types of information: air quality and weather. The air quality data includes the Air Quality Index (AQI). It also measures several pollutants. These pollutants include PM2.5, PM10, nitrogen dioxide, ozone, carbon monoxide, and sulfur dioxide. The weather data includes daily temperature. It also has information on humidity, barometric pressure, and wind speed. 
+
+    This dataset was chosen because it provides comprehensive variables for both air quality and weather. This makes it ideal for studying the relationship between these factors in Dhaka using Statistics \& Probability concept.
+\end{itemize}
+
+% -------------------------------
+
+
+
+
+% ---------- Milestone 2  ----------
+\section{Milestone 02: Probability Sampling Methods}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Images/Milestone02/01.png}
+  \caption{Overview}
+\end{figure}
+
+\subsection*{Part A --- Setup}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Images/Milestone02/02.png}
+  \caption{Setup}
+\end{figure}
+
+\subsection*{Part B --- Simple Random Sampling}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Images/Milestone02/03.png}
+  \caption{Simple Random Sampling}
+\end{figure}
+
+\subsection*{Part C --- Systematic Sampling}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Images/Milestone02/04.png}
+  \caption{Systematic Sampling}
+\end{figure}
+
+\subsection*{Part D --- Stratified Sampling}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Images/Milestone02/05.png}
+  \caption{Stratified Sampling}
+\end{figure}
+
+\subsection*{Part E --- Cluster Sampling}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Images/Milestone02/06.png}
+  \caption{Cluster Sampling}
+\end{figure}
+
+\subsection*{Part F --- Comparison \& Reflection}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{Images/Milestone02/07.png}
+  \caption{Comparison and Reflection}
+\end{figure}
+
+In this milestone, I used four probability sampling methods. The population mean was 32.337344. All methods gave sample means close to it but not the same. Stratified sampling gave the closest mean 32.3276. The difference was very small. This happened because it kept the same group ratio as the dataset. Simple random sampling gave 32.25 which is a bit lower than the population mean. Systematic sampling gave 32.3872 which is slightly higher. Cluster sampling gave 32.5075 which is the farthest from the population mean.
+
+Simple random sampling was the easiest. I wrote only one line of code and got the result. It did not need any group or pattern. Systematic sampling was also easy. I just needed k and a start point. Stratified sampling was harder. I had to use a division column and take samples from each group by proportion. Cluster sampling was easy to code but tricky to pick clusters.
+
+Each method works for different goals. Simple random sampling is good for small or mixed data. Systematic sampling is good when data has no clear order. Stratified sampling is best for datasets with clear groups. Cluster sampling is useful for large data that is grouped by place or type. From this, I saw stratified sampling gave the most accurate result. Simple random sampling was the easiest to use.
+
+
+% ---------- End Milestone 2 block ----------
+
+
+
+
+
+
+% -------------------------------
+\section{Milestone 3: Data Visualization}
+Add graphs and figures using LaTeX. Example:
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.7\textwidth]{example-figure.png}
+\caption{Sample dataset visualization (replace with your figure)}
+\end{figure}
+
+% -------------------------------
+\section{Milestone 4: Probability Distributions}
+Identify probability distributions in your dataset. Perform fitting, plots, and discuss results.
+
+% -------------------------------
+\section{Milestone 5: Hypothesis Testing}
+State hypotheses, perform tests, and report conclusions.
+
+% -------------------------------
+\section{Milestone 6: Regression Analysis}
+Fit regression models, explain coefficients, and evaluate model fit.
+
+% -------------------------------
+\section{Milestone 7--12: Further Analysis}
+Continue documenting each milestone here as instructed in class.
+
+% -------------------------------
+\section{Final Conclusion}
+Summarize the overall findings of your project. Mention challenges, learning outcomes, and possible future work.
+
+\newpage
+\section*{References}
+List your references here in proper citation format. If you prefer, you may use BibTeX.
+
+\end{document}
