@@ -66,7 +66,7 @@ The analysis applies statistical and probabilistic methods from the **STA 2101**
 | Category | Tools |
 |-----------|-------|
 | **Language** | Python |
-| **Libraries** | Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-learn |
+| **Libraries** | Pandas, NumPy, Matplotlib |
 | **Environment** | Jupyter Notebook / Google Colab |
 
 ---
